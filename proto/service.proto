@@ -1,11 +1,11 @@
-syntax="proto3";
+syntax = "proto3";
 
 message StatusRequest {
-  int32 version = 1;
+  string token = 1;
 }
 
 message StatusResponse {
-  int32 version = 1;
+  string token = 1;
   string basicInfo = 2;
 }
 
