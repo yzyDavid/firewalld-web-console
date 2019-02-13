@@ -1,2 +1,4 @@
 *.pb.go
 bin/
+go.mod
+go.sum

@@ -9,6 +9,6 @@ message StatusResponse {
   string basicInfo = 2;
 }
 
-service AgentService {
+service Agent {
   rpc GetStatus(StatusRequest) returns(StatusResponse) {}
 }
