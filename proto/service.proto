@@ -1,0 +1,14 @@
+syntax="proto3";
+
+message StatusRequest {
+  int32 version = 1;
+}
+
+message StatusResponse {
+  int32 version = 1;
+  string basicInfo = 2;
+}
+
+service AgentService {
+  rpc GetStatus(StatusRequest) returns(StatusResponse) {}
+}
